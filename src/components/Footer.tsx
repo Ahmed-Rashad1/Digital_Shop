@@ -38,19 +38,20 @@ const Footer = () => {
             <h1 className="text-myWhite text-xl font-bold">Contact Info</h1>
             <div className="flex flex-col gap-2">
               <div className="flex flex-row gap-2 ">
-                <div className=" h-7 w-7 bg-MyGray rounded-full">
-                  <div className="h-7 w-7 flex justify-center items-center text-myWhite">
+                <div className="h-7 w-7 bg-MyGray rounded-full flex justify-center items-center">
+                  <div className="h-5 w-5 text-myWhite">
                     {" "}
                     <Icons name="location" />
                   </div>
                 </div>
                 <Link href="/" className="hover:text-myWhite">
-                  Palestine-Nablus - Al-makhfiya main St- opposite Diwan kwny
+                  Egypt-Cairo-Maadi
+                  St-109-street
                 </Link>
               </div>
               <div className="flex flex-row gap-2 items-center">
-                <div className=" h-7 w-7 bg-MyGray rounded-full">
-                  <div className="h-7 w-7 flex justify-center items-center text-myWhite">
+                <div className=" h-7 w-7 bg-MyGray rounded-full flex justify-center items-center">
+                  <div className="h-5 w-5 text-myWhite">
                     <Icons name="call" />
                   </div>
                 </div>
@@ -59,8 +60,8 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="flex flex-row gap-2 items-center">
-                <div className=" h-7 w-7 bg-MyGray rounded-full">
-                  <div className="h-7 w-7 flex justify-center items-center text-myWhite">
+                <div className=" h-7 w-7 bg-MyGray rounded-full flex justify-center items-center">
+                  <div className="h-5 w-5  text-myWhite">
                     <Icons name="message" />
                   </div>
                 </div>
@@ -92,19 +93,19 @@ const Footer = () => {
             <p>© 2023 DIVANO. All Rights Reserved Ali Atwan</p>
           </div>
           <div className="flex gap-4 text-myWhite w-full md:w-auto">
-            <Link href="/">
+            <Link href="/" className="w-6 h-6">
               <Icons name="facebook" />
             </Link>
-            <Link href="/">
+            <Link href="/" className="w-6 h-6">
               <Icons name="twitter" />
             </Link>
-            <Link href="/">
+            <Link href="/" className="w-6 h-6">
               <Icons name="whatsApp" />
             </Link>
-            <Link href="/">
+            <Link href="/" className="w-6 h-6">
               <Icons name="instagram" />
             </Link>
-            <Link href="/">
+            <Link href="/" className="w-6 h-6">
               <Icons name="linkedIn" />
             </Link>
           </div>

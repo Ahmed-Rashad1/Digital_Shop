@@ -66,19 +66,25 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-1 text-myBlack">
+            <Link href="/" className="flex items-center gap-1 text-myBlack ">
+            <div className="w-8 h-8">
               <Icons name="profile" />
+              </div>
               <h2 className="hidden md:block">Login</h2>
             </Link>
             <Link
               href="/"
-              className="px-3 border-x-slate-500 border-x-2 flex items-center gap-1 text-myBlack"
+              className="px-3 border-x-slate-500 border-x-2 flex items-center gap-1 text-myBlack "
             >
+               <div className="w-8 h-8">
               <Icons name="heart" />
+              </div>
               <h2 className="hidden md:block">Wishlist</h2>
             </Link>
             <Link href="/" className="flex items-center gap-1 text-myBlack">
+            <div className="flex-1 w-8 h-8">
               <Icons name="buy" />
+              </div>
               <h2 className="hidden md:block">Cart</h2>
             </Link>
           </div>

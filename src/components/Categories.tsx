@@ -7,7 +7,7 @@ import { Icons } from "./Icons/Icons.jsx";
 import { usePathname } from "next/navigation.js";
 
 const Categories = () => {
-  const [links, setLinks] = useState([]);
+  const [data, setData] = useState([]);
   const [id, setId] = useState(null);
   const [openCat, setOpenCat] = useState(false);
   const [perantId, setPerantId] = useState(null);
@@ -33,7 +33,7 @@ const Categories = () => {
     fetch("links.json")
       .then((response) => response.json())
       .then((data) => {
-        setLinks(data);
+        setData(data);
       });
   };
   useEffect(() => {
@@ -71,7 +71,7 @@ const Categories = () => {
       )}
       {openCat && (
         <div className="pt-6 text-xl w-full md:max-w-80 lg:max-w-60 xl:max-w-80  bg-myWhite text-myBlack flex flex-col sm:gap-1 md:gap-3 justify-start items-start absolute left-0  top-54  md:top-auto md:left-auto h-auto shadow-lg z-10 rounded-b-md">
-          {links.map((prop: any) => (
+          {data.map((prop: any) => (
             <div key={prop.id} className="w-full px-1 md:px-1">
               <h1 className="px-8 md:px-5 py-3 font-bold text-myBlack">
                 {prop.title}
@@ -99,7 +99,9 @@ const Categories = () => {
                           }`}
                         >
                           {" "}
+                          <div className="w-6 h-6">
                           <Icons name={link.icon} />
+                          </div>
                         </div>
                         <h3 className="text-base "> {link.title}</h3>
                       </div>
@@ -110,7 +112,10 @@ const Categories = () => {
                             : "text-MyTextGray"
                         }`}
                       >
+                                                  <div className="w-6 h-6">
+
                         <Icons name="arrow" />
+                      </div>
                       </div>
                     </div>
                     {link.id === id && prop.id === perantId && (

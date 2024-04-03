@@ -6,7 +6,7 @@ import { Icons } from "./Icons/Icons";
 const Offer = () => {
   return (
     <div className="bg-black  ">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row h-[525px]">
+      <div className="container mx-auto px-5 flex flex-col md:flex-row h-[525px]">
         <div className="flex-1 text-myWhite flex flex-col justify-center  items-center lg:items-start text-center gap-8 py-6">
           <div className="flex flex-row items-center gap-5">
             <Image src="/apple_gray.png" alt="" width={30} height={30}></Image>
@@ -18,7 +18,9 @@ const Offer = () => {
           </div>
           <Link href="/" className="flex flex-row items-center gap-2">
             <p className="border-b-2 border-myWhite">Shop Now</p>
+            <div className="w-6 h-6">
             <Icons name="arrow" />
+            </div>
           </Link>
         </div>
         <div className="flex-1 w-full relative ">
