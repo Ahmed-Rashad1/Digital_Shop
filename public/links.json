@@ -6,6 +6,7 @@
       {
         "id": 1,
         "title": "Car Accessories",
+        "nickname": "Cars",
         "url": "/",
         "icon": "car",
         "chideren": [
@@ -38,6 +39,7 @@
       {
         "id": 2,
         "title": "Laptops & PC Accessories",
+        "nickname": "Computers",
         "url": "/",
         "icon": "monitor",
         "chideren": [
@@ -70,6 +72,7 @@
       {
         "id": 3,
         "title": "Mobile Accessories",
+        "nickname": "Phones",
         "url": "/",
         "icon": "mobile",
         "chideren": [
@@ -102,6 +105,7 @@
       {
         "id": 4,
         "title": "iPad/Tablets Accessories",
+        "nickname": "Tablets",
         "url": "/",
         "icon": "mobbile",
         "chideren": [
@@ -134,6 +138,7 @@
       {
         "id": 5,
         "title": "Smart Watch Accessories",
+        "nickname": "SmartWatch",
         "url": "/",
         "icon": "watch",
         "chideren": [
@@ -172,6 +177,7 @@
       {
         "id": 1,
         "title": "Networks",
+        "nickname": "Networks",
         "url": "/",
         "icon": "airdrop",
         "chideren": [
@@ -210,6 +216,7 @@
       {
         "id": 1,
         "title": "Audio (Speakers)",
+        "nickname": "Audios",
         "url": "/",
         "icon": "speaker",
         "chideren": [
@@ -248,6 +255,7 @@
       {
         "id": 1,
         "title": "Devices",
+        "nickname": "Devices",
         "url": "/",
         "icon": "externalDrive",
         "chideren": [
