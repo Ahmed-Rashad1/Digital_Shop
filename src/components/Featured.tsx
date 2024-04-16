@@ -4,6 +4,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Icons } from "./Icons/Icons";
+import Link from "next/link";
 
 const Featured = () => {
   const [data, setData] = useState([]);
@@ -16,7 +17,6 @@ const Featured = () => {
   };
   useEffect(() => {
     getData();
-    console.log(data);
   }, []);
 
   return (
@@ -39,7 +39,13 @@ const Featured = () => {
               ?.filter((ItemId: any) => ItemId.id <= 4)
               .map((item: any) =>
                 item.properties?.map((categ: any) => (
-                  <div
+                  <Link
+                    href={{
+                      pathname: "/products",
+                      query: {
+                        class: categ.class,
+                      },
+                    }}
                     key={categ.id}
                     className="w-[180px] h-[150px] border-2 border-slate-300 rounded-lg text-myBlack hover:text-myWhite hover:bg-primary flex flex-col items-center p-2 transition-all duration-300 cursor-pointer shadow-xl"
                   >
@@ -51,7 +57,7 @@ const Featured = () => {
                     <div className="flex-2">
                       <h1 className="text-center mb-3">{categ.nickname}</h1>
                     </div>
-                  </div>
+                  </Link>
                 ))
               )}
           </div>

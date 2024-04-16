@@ -16,10 +16,18 @@ const Offer = () => {
             <h1 className="text-5xl  xl:text-6xl md:text-start">Up to 10%</h1>
             <h1 className="text-5xl xl:text-6xl ">off Voucher</h1>
           </div>
-          <Link href="/" className="flex flex-row items-center gap-2">
+          <Link
+            href={{
+              pathname: "/products",
+              query: {
+                class: "mobile phones",
+              },
+            }}
+            className="flex flex-row items-center gap-2"
+          >
             <p className="border-b-2 border-myWhite">Shop Now</p>
             <div className="w-6 h-6">
-            <Icons name="arrow" />
+              <Icons name="arrow" />
             </div>
           </Link>
         </div>

@@ -19,10 +19,10 @@ const Navbar = () => {
     { id: 1, title: "Home", url: "/" },
     { id: 2, title: "About", url: "/about" },
     { id: 3, title: "Our Brands", url: "/ourBrands" },
-    { id: 4, title: "Accessories", url: "/accessories" },
-    { id: 5, title: "Audio", url: "/audio" },
-    { id: 6, title: "Networks", url: "/networks" },
-    { id: 7, title: "Devices", url: "/devices" },
+    { id: 4, title: "Accessories", url: "/products?class=Accessories" },
+    { id: 5, title: "Audio", url: "/products?class=Audio" },
+    { id: 6, title: "Networks", url: "/products?class=Networks" },
+    { id: 7, title: "Devices", url: "/products?class=Devices" },
     { id: 8, title: "Repair Equibments", url: "/repairEquibments" },
     { id: 9, title: "Protections", url: "/protections" },
   ];
@@ -67,8 +67,8 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-3">
             <Link href="/" className="flex items-center gap-1 text-myBlack ">
-            <div className="w-8 h-8">
-              <Icons name="profile" />
+              <div className="w-8 h-8">
+                <Icons name="profile" />
               </div>
               <h2 className="hidden md:block">Login</h2>
             </Link>
@@ -76,14 +76,14 @@ const Navbar = () => {
               href="/"
               className="px-3 border-x-slate-500 border-x-2 flex items-center gap-1 text-myBlack "
             >
-               <div className="w-8 h-8">
-              <Icons name="heart" />
+              <div className="w-8 h-8">
+                <Icons name="heart" />
               </div>
               <h2 className="hidden md:block">Wishlist</h2>
             </Link>
             <Link href="/" className="flex items-center gap-1 text-myBlack">
-            <div className="flex-1 w-8 h-8">
-              <Icons name="buy" />
+              <div className="flex-1 w-8 h-8">
+                <Icons name="buy" />
               </div>
               <h2 className="hidden md:block">Cart</h2>
             </Link>
