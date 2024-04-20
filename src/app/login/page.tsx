@@ -1,12 +1,7 @@
-import SingleProduct from "@/components/SingleProduct";
 import React from "react";
 
 const LoginPage = () => {
-  return (
-    <div>
-      <SingleProduct />
-    </div>
-  );
+  return <div>loginPage </div>;
 };
 
 export default LoginPage;
