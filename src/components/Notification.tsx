@@ -10,15 +10,7 @@ const Notification = () => {
           <p className="hidden text-xs text-center lg:text-base md:block ">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           </p>
-          <Link
-            href={{
-              pathname: "/products",
-              query: {
-                class: "All",
-              },
-            }}
-            className="underline"
-          >
+          <Link href="/products" className="underline">
             ShopNow &gt;{" "}
           </Link>
         </div>

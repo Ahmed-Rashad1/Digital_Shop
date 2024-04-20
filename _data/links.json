@@ -1,0 +1,364 @@
+{
+  "links": [
+    {
+      "id": 1,
+      "title": "Accessories",
+      "properties": [
+        {
+          "id": 1,
+          "title": "car Accessories",
+          "nickname": "Cars",
+          "class": "car Accessories",
+          "url": "/",
+          "icon": "car",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Laptops & PC Accessories",
+          "nickname": "Computers",
+          "class": "laptops & PC Accessories",
+          "url": "/",
+          "icon": "monitor",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 4,
+              "title": "Holder",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Mobile Accessories",
+          "nickname": "Phones",
+          "class": "Mobile phones Accessories",
+          "url": "/",
+          "icon": "mobile",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 4,
+              "title": "Holder",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "iPad/Tablets Accessories",
+          "nickname": "Tablets",
+          "class": "iPad & tablets Accessories",
+          "url": "/",
+          "icon": "mobbile",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 4,
+              "title": "Holder",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Smart Watch Accessories",
+          "nickname": "smartWatch",
+          "class": "Smart Watch Accessories",
+          "url": "/",
+          "icon": "watch",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 4,
+              "title": "Holder",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Networks",
+      "properties": [
+        {
+          "id": 1,
+          "title": "Networks",
+          "nickname": "Networks",
+          "class": "Networks",
+          "url": "/",
+          "icon": "airdrop",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 4,
+              "title": "Holder",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Audios",
+      "properties": [
+        {
+          "id": 1,
+          "title": "Audio (Speakers)",
+          "nickname": "Audios",
+          "class": "Audios",
+          "url": "/",
+          "icon": "speaker",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 4,
+              "title": "Holder",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Accessories",
+      "properties": [
+        {
+          "id": 1,
+          "title": "Devices",
+          "nickname": "Devices",
+          "class": "Devices",
+          "url": "/",
+          "icon": "externalDrive",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 4,
+              "title": "Holder",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Repair Equibments",
+      "properties": [
+        {
+          "id": 1,
+          "title": "Repair & Mobile Repair Equipments",
+          "url": "/",
+          "icon": "driver",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 4,
+              "title": "Holder",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Contact us",
+          "url": "/",
+          "icon": "sms",
+          "chideren": [
+            {
+              "id": 1,
+              "title": "Car Charger",
+              "url": "/About",
+              "icon": ""
+            },
+            {
+              "id": 2,
+              "title": "Mobile Holder",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 3,
+              "title": "Bluetooth dongle",
+              "url": "/",
+              "icon": ""
+            },
+            {
+              "id": 4,
+              "title": "Holder",
+              "url": "/",
+              "icon": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

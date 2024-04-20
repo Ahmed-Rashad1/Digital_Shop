@@ -30,7 +30,7 @@ const Categories = () => {
     }
   };
   const getData = () => {
-    fetch("links.json")
+    fetch("https://links-api.onrender.com/links/")
       .then((response) => response.json())
       .then((data) => {
         setData(data);
@@ -100,7 +100,7 @@ const Categories = () => {
                         >
                           {" "}
                           <div className="w-6 h-6">
-                          <Icons name={link.icon} />
+                            <Icons name={link.icon} />
                           </div>
                         </div>
                         <h3 className="text-base "> {link.title}</h3>
@@ -112,10 +112,9 @@ const Categories = () => {
                             : "text-MyTextGray"
                         }`}
                       >
-                                                  <div className="w-6 h-6">
-
-                        <Icons name="arrow" />
-                      </div>
+                        <div className="w-6 h-6">
+                          <Icons name="arrow" />
+                        </div>
                       </div>
                     </div>
                     {link.id === id && prop.id === perantId && (

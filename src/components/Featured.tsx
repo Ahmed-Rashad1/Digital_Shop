@@ -9,7 +9,7 @@ import Link from "next/link";
 const Featured = () => {
   const [data, setData] = useState([]);
   const getData = () => {
-    fetch("links.json")
+    fetch("https://links-api.onrender.com/links/")
       .then((response) => response.json())
       .then((data) => {
         setData(data);

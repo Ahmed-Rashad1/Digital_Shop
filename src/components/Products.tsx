@@ -4,16 +4,17 @@ import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { Icons } from "./Icons/Icons";
+import Link from "next/link";
 const Products = () => {
   const categName = useSearchParams();
   const [products, setProducts] = useState([]);
   const [filterProducts, setFilterProducts] = useState([]);
   const getData = () => {
-    fetch("links2.json")
+    fetch("https://products-api-m9ho.onrender.com/products/")
       .then((response) => response.json())
       .then((products) => {
         setProducts(products);
-        if (categName.get("class") == "All") {
+        if (categName.get("class") == "All" || categName.get("class") == null) {
           setFilterProducts(products);
         } else {
           setFilterProducts(
@@ -34,7 +35,7 @@ const Products = () => {
     <div className="flex flex-col">
       {/* title */}
       <div className="text-3xl font-bold py-10">
-        {categName.get("class") ? categName.get("class") : ""}
+        {categName.get("class") ? categName.get("class") : "All Products"}
         <span className="ms-3">
           {categName.get("class") === "All" ? "Products" : ""}
         </span>
@@ -70,7 +71,8 @@ const Products = () => {
           <div className="flex justify-center items-center w-full">
             <div className="flex flex-wrap gap-16 justify-center items-center">
               {filterProducts?.map((product: any) => (
-                <div
+                <Link
+                  href={`/products/${product.id}`}
                   key={product.id}
                   className="w-64 h-80 relative flex flex-col items-start justify-between"
                 >
@@ -91,7 +93,7 @@ const Products = () => {
                     <div className="">{product.title}</div>
                     <div className="text-primary">{product.price}</div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
