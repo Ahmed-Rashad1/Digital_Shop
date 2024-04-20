@@ -4,7 +4,7 @@ import Link from "next/link";
 
 async function getData(id: any) {
   const res = await fetch(
-    "https://products-api-m9ho.onrender.com/products/" + id
+    "https://products-api-flame.vercel.app/products/" + id
   );
   return res.json();
 }

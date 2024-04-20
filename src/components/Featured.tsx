@@ -9,7 +9,7 @@ import Link from "next/link";
 const Featured = () => {
   const [data, setData] = useState([]);
   const getData = () => {
-    fetch("https://links-api.onrender.com/links/")
+    fetch("https://products-api-flame.vercel.app/links/")
       .then((response) => response.json())
       .then((data) => {
         setData(data);

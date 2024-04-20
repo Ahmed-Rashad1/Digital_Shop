@@ -30,7 +30,7 @@ const Categories = () => {
     }
   };
   const getData = () => {
-    fetch("https://links-api.onrender.com/links/")
+    fetch("https://products-api-flame.vercel.app/links/")
       .then((response) => response.json())
       .then((data) => {
         setData(data);
