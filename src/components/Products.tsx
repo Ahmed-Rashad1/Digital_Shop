@@ -42,7 +42,7 @@ const Products = () => {
       </div>
       <div className="flex flex-row gap-10">
         {/* dashboard */}
-        <div className="min-w-60 w-60 bg-slate-500"></div>
+        <div className="hidden lg:block min-w-60 w-60 bg-slate-500"></div>
         <div>
           {/* sorting */}
           <div className="flex flex-row justify-between items-center py-5">
@@ -53,7 +53,7 @@ const Products = () => {
               <p>product found</p>
             </div>
             <div>
-              <form className="min-w-52 mx-auto">
+              <form className="min-w-36  md:min-w-60 mx-auto">
                 <select
                   id="countries"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
