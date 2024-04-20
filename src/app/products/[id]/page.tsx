@@ -57,7 +57,7 @@ export default async function SingleProductPage({ params }: any) {
           <h1 className="text-xl lg:text-4xl font-bold tracking-wider">
             {product.title}
           </h1>
-          <h2 className="text-primary text-xl lg:text-4xl font-bold tracking-wider">{`${product.price}.00 EGP`}</h2>
+          <h2 className="text-primary text-xl lg:text-4xl font-bold tracking-wider">{`${product.price}.00 USD`}</h2>
           <p className="text-MyGray text-sm">{product.description}</p>
           <div className="flex flex-col lg:flex-row lg:py-7 gap-4 ">
             <div className="w-full lg:w-auto flex justify-center items-center gap-4">
