@@ -11,6 +11,7 @@ const Products = () => {
   const [filterProducts, setFilterProducts] = useState([]);
   const getData = () => {
     fetch("https://products-api-flame.vercel.app/products/")
+    // fetch("products.json")
       .then((response) => response.json())
       .then((products) => {
         setProducts(products);
@@ -20,8 +21,8 @@ const Products = () => {
           setFilterProducts(
             products.filter((product: any) => {
               return (
-                product.class.includes(categName.get("class")) ||
-                categName.get("class")?.includes(product.category)
+                product.class.toLowerCase().includes(categName.get("class")?.toLowerCase()) ||
+                categName.get("class")?.toLowerCase().includes(product.category.toLowerCase())
               );
             })
           );

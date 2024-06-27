@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { Icons } from "./Icons/Icons.jsx";
 import { usePathname } from "next/navigation.js";
+import Link from "next/link.js";
 
 const Categories = () => {
   const [data, setData] = useState([]);
@@ -12,7 +13,6 @@ const Categories = () => {
   const [openCat, setOpenCat] = useState(false);
   const [perantId, setPerantId] = useState(null);
   const refCat = useRef<HTMLDivElement | null>(null);
-  const refLink = useRef<HTMLDivElement | null>(null);
 
   const openCatHandler = () => {
     setOpenCat(true);
@@ -31,6 +31,7 @@ const Categories = () => {
   };
   const getData = () => {
     fetch("https://products-api-flame.vercel.app/links/")
+    // fetch("linksnew.json")
       .then((response) => response.json())
       .then((data) => {
         setData(data);
@@ -125,15 +126,24 @@ const Categories = () => {
                         }}
                       >
                         <h1 className="font-bold text-myBlack">{link.title}</h1>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-3">
                           {link.chideren.map((child: any) => (
-                            <h3
+                            <Link
+                            onClick={() => setOpenCat(false)}
                               key={child.id}
+                              href={
+                                {
+                                  pathname: "/products",
+                                  query: {
+                                    class: child.title.toLowerCase(),
+                                  },
+                                }
+                              }
                               className="text-base text-slate-600 "
                             >
                               {" "}
                               {child.title}
-                            </h3>
+                            </Link>
                           ))}
                         </div>
                       </div>

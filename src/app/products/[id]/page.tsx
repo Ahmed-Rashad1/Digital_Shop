@@ -1,4 +1,5 @@
 import { Icons } from "@/components/Icons/Icons";
+import Price from "@/components/Price";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +11,22 @@ async function getData(id: any) {
 }
 
 export default async function SingleProductPage({ params }: any) {
+
+
+  // const product=
+  //   {
+  //     "id": 1,
+  //     "title": "Samsung-Car-Charger",
+  //     "description": "An Car Charger which is nothing like Samsung",
+  //     "price": 50,
+  //     "discountPercentage": 12.96,
+  //     "rating": 4.69,
+  //     "stock": 94,
+  //     "brand": "samsung",
+  //     "class": "car Accessories",
+  //     "category": "car charger",
+  //     "image": "samsung-car-charger.jpg"
+  //   }
   const product = await getData(params.id);
   return (
     <div className="container mx-auto p-5 w-full">
@@ -57,31 +74,8 @@ export default async function SingleProductPage({ params }: any) {
           <h1 className="text-xl lg:text-4xl font-bold tracking-wider">
             {product.title}
           </h1>
-          <h2 className="text-primary text-xl lg:text-4xl font-bold tracking-wider">{`${product.price}.00 USD`}</h2>
           <p className="text-MyGray text-sm">{product.description}</p>
-          <div className="flex flex-col lg:flex-row lg:py-7 gap-4 ">
-            <div className="w-full lg:w-auto flex justify-center items-center gap-4">
-              <div className="flex justify-center items-center  w-1/2 lg:w-auto">
-                <div className="border-[1px] border-MyTextLiteGray text-4xl  w-32 lg:w-20 h-14 flex items-center justify-center rounded-s-xl cursor-pointer">
-                  -
-                </div>
-                <div className=" w-full lg:w-18 h-14 bg-slate-100 flex items-center justify-center text-3xl font-bold">
-                  2
-                </div>
-                <div className="border-[1px] border-MyTextLiteGray text-4xl   w-32 lg:w-20 text-primary h-14 flex items-center justify-center rounded-e-xl cursor-pointer">
-                  +
-                </div>
-              </div>
-              <div className="w-14 h-14 p-3 rounded-xl border-[1px] border-MyTextLiteGray text-MyGray cursor-pointer">
-                <Icons name="heart" />
-              </div>
-            </div>
-            <div className="flex  flex-1">
-              <div className="bg-primary flex-1 text-myWhite rounded-lg h-14 flex items-center justify-center cursor-pointer">
-                Add to cart
-              </div>
-            </div>
-          </div>
+          <Price price={product.price} id={params.id} />
           <div className="w-full border-[1px] flex flex-col border-MyTextLiteGray rounded-lg py-2">
             <div className="flex gap-5 items-center p-4 pb-6 border-b-[1px] border-slate-100">
               <div className="w-8 h-8 text-primary">
