@@ -19,22 +19,8 @@ const Price = ({ price, id }: Props) => {
 
 
   const cartHandler = () => {
-    let itemExist = false
-    for (let i = 0; i < cartArray.length; i++) {
-      if (cartArray[i].id == id) {
-        itemExist = true
-      }
     }
-    if (!itemExist) {
-      setCartArray([
-        ...cartArray, {
-          id: id,
-          price: price
-        }
-      ])
-    }
-    console.log(cartArray);
-  }
+
   return (
     <div>
       <h2 className="text-primary text-xl lg:text-4xl font-bold tracking-wider">
