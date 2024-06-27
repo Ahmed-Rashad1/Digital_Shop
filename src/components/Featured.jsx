@@ -7,7 +7,7 @@ import { Icons } from "./Icons/Icons";
 import Link from "next/link";
 
 const Featured = () => {
-  const ref = useRef<HTMLButtonElement>(null);
+  const ref = useRef();
 
   const [data, setData] = useState([]);
   // const [slider, setSlider] = useState(0);
@@ -60,9 +60,9 @@ const Featured = () => {
           <div className="flex gap-4 md:gap-8 w-max">
             {/* SINGLE ITEM */}
             {data
-              ?.filter((ItemId: any) => ItemId.id <= 4)
-              .map((item: any) =>
-                item.properties?.map((categ: any) => (
+              ?.filter((ItemId) => ItemId.id <= 4)
+              .map((item) =>
+                item.properties?.map((categ) => (
                   <Link
                     href={{
                       pathname: "/products",
