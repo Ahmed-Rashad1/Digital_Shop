@@ -15,7 +15,7 @@
             {
               "id": 1,
               "title": "Car Charger",
-              "url": "/About",
+              "url": "/",
               "icon": ""
             },
             {
@@ -42,25 +42,13 @@
           "chideren": [
             {
               "id": 1,
-              "title": "Car Charger",
-              "url": "/About",
+              "title": "mouse",
+              "url": "/",
               "icon": ""
             },
             {
               "id": 2,
-              "title": "Mobile Holder",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 3,
-              "title": "Bluetooth dongle",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 4,
-              "title": "Holder",
+              "title": "keyboardr",
               "url": "/",
               "icon": ""
             }
@@ -76,25 +64,13 @@
           "chideren": [
             {
               "id": 1,
-              "title": "Car Charger",
-              "url": "/About",
+              "title": "mobile charger",
+              "url": "/",
               "icon": ""
             },
             {
               "id": 2,
               "title": "Mobile Holder",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 3,
-              "title": "Bluetooth dongle",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 4,
-              "title": "Holder",
               "url": "/",
               "icon": ""
             }
@@ -110,25 +86,13 @@
           "chideren": [
             {
               "id": 1,
-              "title": "Car Charger",
-              "url": "/About",
+              "title": "tablet charger",
+              "url": "/",
               "icon": ""
             },
             {
               "id": 2,
               "title": "Mobile Holder",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 3,
-              "title": "Bluetooth dongle",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 4,
-              "title": "Holder",
               "url": "/",
               "icon": ""
             }
@@ -144,25 +108,7 @@
           "chideren": [
             {
               "id": 1,
-              "title": "Car Charger",
-              "url": "/About",
-              "icon": ""
-            },
-            {
-              "id": 2,
-              "title": "Mobile Holder",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 3,
-              "title": "Bluetooth dongle",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 4,
-              "title": "Holder",
+              "title": "smartWatch stick",
               "url": "/",
               "icon": ""
             }
@@ -184,25 +130,7 @@
           "chideren": [
             {
               "id": 1,
-              "title": "Car Charger",
-              "url": "/About",
-              "icon": ""
-            },
-            {
-              "id": 2,
-              "title": "Mobile Holder",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 3,
-              "title": "Bluetooth dongle",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 4,
-              "title": "Holder",
+              "title": "router",
               "url": "/",
               "icon": ""
             }
@@ -224,25 +152,7 @@
           "chideren": [
             {
               "id": 1,
-              "title": "Car Charger",
-              "url": "/About",
-              "icon": ""
-            },
-            {
-              "id": 2,
-              "title": "Mobile Holder",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 3,
-              "title": "Bluetooth dongle",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 4,
-              "title": "Holder",
+              "title": "soundbar",
               "url": "/",
               "icon": ""
             }
@@ -264,25 +174,19 @@
           "chideren": [
             {
               "id": 1,
-              "title": "Car Charger",
-              "url": "/About",
+              "title": "phones",
+              "url": "/",
               "icon": ""
             },
             {
               "id": 2,
-              "title": "Mobile Holder",
+              "title": "laptops",
               "url": "/",
               "icon": ""
             },
             {
               "id": 3,
-              "title": "Bluetooth dongle",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 4,
-              "title": "Holder",
+              "title": "games",
               "url": "/",
               "icon": ""
             }
@@ -300,30 +204,6 @@
           "url": "/",
           "icon": "driver",
           "chideren": [
-            {
-              "id": 1,
-              "title": "Car Charger",
-              "url": "/About",
-              "icon": ""
-            },
-            {
-              "id": 2,
-              "title": "Mobile Holder",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 3,
-              "title": "Bluetooth dongle",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 4,
-              "title": "Holder",
-              "url": "/",
-              "icon": ""
-            }
           ]
         },
         {
@@ -332,30 +212,6 @@
           "url": "/",
           "icon": "sms",
           "chideren": [
-            {
-              "id": 1,
-              "title": "Car Charger",
-              "url": "/About",
-              "icon": ""
-            },
-            {
-              "id": 2,
-              "title": "Mobile Holder",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 3,
-              "title": "Bluetooth dongle",
-              "url": "/",
-              "icon": ""
-            },
-            {
-              "id": 4,
-              "title": "Holder",
-              "url": "/",
-              "icon": ""
-            }
           ]
         }
       ]

@@ -6,14 +6,14 @@ import { useEffect, useRef, useState } from "react";
 
 const links = [
   { id: 1, title: "Home", url: "/" },
-  { id: 2, title: "About", url: "/About" },
-  { id: 3, title: "Our Brands", url: "/" },
-  { id: 4, title: "Accessories", url: "/" },
-  { id: 5, title: "Audio", url: "/" },
-  { id: 6, title: "Networks", url: "/" },
-  { id: 7, title: "Devices", url: "/" },
-  { id: 8, title: "Repair Equibments", url: "/" },
-  { id: 9, title: "Protections", url: "/" },
+  { id: 2, title: "About", url: "/about" },
+  { id: 3, title: "All Products", url: "/products" },
+  { id: 4, title: "Accessories", url: "/products?class=Accessories" },
+  { id: 5, title: "Audio", url: "/products?class=Audio" },
+  { id: 6, title: "Networks", url: "/products?class=Networks" },
+  { id: 7, title: "Devices", url: "/products?class=Devices" },
+  { id: 8, title: "Repair Equibments", url: "/repairEquibments" },
+  { id: 9, title: "Protections", url: "/protections" },
 ];
 
 const Menu = () => {

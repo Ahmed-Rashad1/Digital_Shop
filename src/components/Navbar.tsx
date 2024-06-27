@@ -10,15 +10,12 @@ import { usePathname } from "next/navigation";
 import { Icons } from "./Icons/Icons";
 
 const Navbar = () => {
-  const pathname = usePathname();
+  const [selected, setSelected] = useState(0)
 
-  const isActive = (url: any) => {
-    return pathname === url;
-  };
   const links = [
     { id: 1, title: "Home", url: "/" },
     { id: 2, title: "About", url: "/about" },
-    { id: 3, title: "Our Brands", url: "/ourBrands" },
+    { id: 3, title: "All Products", url: "/products" },
     { id: 4, title: "Accessories", url: "/products?class=Accessories" },
     { id: 5, title: "Audio", url: "/products?class=Audio" },
     { id: 6, title: "Networks", url: "/products?class=Networks" },
@@ -81,7 +78,7 @@ const Navbar = () => {
               </div>
               <h2 className="hidden md:block">Wishlist</h2>
             </Link>
-            <Link href="/" className="flex items-center gap-1 text-myBlack">
+            <Link href="/cart" className="flex items-center gap-1 text-myBlack">
               <div className="flex-1 w-8 h-8">
                 <Icons name="buy" />
               </div>
@@ -97,15 +94,16 @@ const Navbar = () => {
           <Categories />
         </div>
         <div className="hidden lg:flex text-sm xl:text-base justify-between flex-1">
-          {links.map((item) => {
+          {links.map((item, index) => {
             return (
-              <Link href={item.url} key={item.id} className="pb-1">
+              <Link href={item.url} key={item.id} className="pb-1" onClick={()=> setSelected(index)}>
                 <div
                   className={`p-1 pb-2 ${
-                    isActive(item.url)
+                    selected === index
                       ? "border-b-2 border-b-primary text-primary"
                       : ""
                   }`}
+                
                 >
                   {item.title}
                 </div>

@@ -1,5 +1,4 @@
-{
-  "products": [
+[
     {
       "id": 1,
       "title": "Samsung-Car-Charger",
@@ -231,7 +230,7 @@
       "stock": 94,
       "brand": "samsung",
       "class": "iPad & tablets Accessories",
-      "category": "tablet charger",
+      "category": "tablets charger",
       "image": "samsung-mobile-charger.jpg"
     },
     {
@@ -244,7 +243,7 @@
       "stock": 94,
       "brand": "Apple",
       "class": "iPad & tablets Accessories",
-      "category": "tablet charger",
+      "category": "tablets charger",
       "image": "apple-mobile-charger.jpg"
     },
     {
@@ -257,7 +256,7 @@
       "stock": 94,
       "brand": "Apple",
       "class": "iPad & tablets Accessories",
-      "category": "tablet charger",
+      "category": "tablets charger",
       "image": "apple-mobile-charger.jpg"
     },
     {
@@ -269,8 +268,8 @@
       "rating": 4.69,
       "stock": 94,
       "brand": "Apple",
-      "class": "Smartwatch Accessories",
-      "category": "smartwatch",
+      "class": "Smart Watch Accessories",
+      "category": "smartWatch",
       "image": "stick-watch-apple.jpg"
     },
     {
@@ -282,8 +281,8 @@
       "rating": 4.69,
       "stock": 94,
       "brand": "Apple",
-      "class": "Smartwatch Accessories",
-      "category": "smartwatch",
+      "class": "Smart Watch Accessories",
+      "category": "smartWatch",
       "image": "stick-watch-apple.jpg"
     },
     {
@@ -295,8 +294,8 @@
       "rating": 4.69,
       "stock": 94,
       "brand": "Apple",
-      "class": "Smartwatch Accessories",
-      "category": "smartwatch",
+      "class": "Smart Watch Accessories",
+      "category": "smartWatch",
       "image": "stick-watch-apple.jpg"
     },
     {
@@ -718,4 +717,3 @@
       "image": "hp-labtop.jpg"
     }
   ]
-}
