@@ -10,7 +10,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   const [filterProducts, setFilterProducts] = useState([]);
   const getData = () => {
-    fetch("https://products-api-flame.vercel.app/products/")
+    fetch("https://products-api-flame.vercel.app/products")
     // fetch("products.json")
       .then((response) => response.json())
       .then((products) => {
